@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import { BackToTop } from "@/components/layout/BackToTop";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -50,6 +51,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen flex flex-col bg-brand-cream text-brand-dark selection:bg-brand-green selection:text-brand-cream font-sans">
         {children}
+        <BackToTop />
       </body>
     </html>
   );
