@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-sans: var(--font-jakarta), "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-brand-green: #14382B;
+  --color-brand-green-hover: #0D261C;
+  --color-brand-green-light: #235240;
+  --color-brand-green-subtle: #EBF3EE;
+  
+  --color-brand-gold: #C59B4B;
+  --color-brand-gold-hover: #B08638;
+  --color-brand-gold-light: #F9F3E8;
+
+  --color-brand-cream: #FAF7F2;
+  --color-brand-card: #FFFFFF;
+  --color-brand-sand: #F3ECE1;
+  --color-brand-border: #E8DFD1;
+
+  --color-brand-dark: #121915;
+  --color-brand-muted: #596B62;
+}
+
+:root {
+  --background: #FAF7F2;
+  --foreground: #121915;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-jakarta), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #14382B;
+  color: #FAF7F2;
+}
